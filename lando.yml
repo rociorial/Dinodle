@@ -1,0 +1,14 @@
+name: dinodle
+recipe: lamp
+config:
+  webroot: .
+  database: mysql
+
+services:
+  appserver:
+    type: php:8.1
+    xdebug: true
+
+  phpmyadmin:
+    type: phpmyadmin
+    portforward: true
